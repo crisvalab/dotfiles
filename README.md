@@ -3,7 +3,7 @@
 
 In this repository you can find various configurations to configure your Linux operating system, preferably ArchLinux and its derivatives like Manjaro, Arco Linux...
 
-- Xresources
+- Xresources (for 4k screen)
 - Xmonad
 - Xmonad
 - Xmobar

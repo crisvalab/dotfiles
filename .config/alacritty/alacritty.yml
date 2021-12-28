@@ -1,0 +1,73 @@
+background_opacity: 0.98
+colors:
+  bright:
+    black: '#6272a4'
+    blue: '#d6acff'
+    cyan: '#a4ffff'
+    green: '#69ff94'
+    magenta: '#ff92df'
+    red: '#ff6e6e'
+    white: '#ffffff'
+    yellow: '#ffffa5'
+  cursor:
+    cursor: CellForeground
+    text: CellBackground
+  hints:
+    end:
+      background: '#282a36'
+      foreground: '#f1fa8c'
+    start:
+      background: '#f1fa8c'
+      foreground: '#282a36'
+  line_indicator:
+    background: None
+    foreground: None
+  normal:
+    black: '#21222c'
+    blue: '#bd93f9'
+    cyan: '#8be9fd'
+    green: '#50fa7b'
+    magenta: '#ff79c6'
+    red: '#ff5555'
+    white: '#f8f8f2'
+    yellow: '#f1fa8c'
+  primary:
+    background: '#282a36'
+    bright_foreground: '#ffffff'
+    foreground: '#f8f8f2'
+  search:
+    bar:
+      background: '#282a36'
+      foreground: '#f8f8f2'
+    focused_match:
+      background: '#ffb86c'
+      foreground: '#44475a'
+    matches:
+      background: '#50fa7b'
+      foreground: '#44475a'
+  selection:
+    background: '#44475a'
+    text: CellForeground
+  vi_mode_cursor:
+    cursor: CellForeground
+    text: CellBackground
+font:
+  bold:
+    family: UbuntuMono Nerd Font
+    style: Bold
+  bold_italic:
+    family: monospace
+    style: Bold Italic
+  italic:
+    family: UbuntuMono Nerd Font
+    style: Italic
+  normal:
+    family: UbuntuMono Nerd Font
+    style: Regular
+  size: 14.0
+scrolling:
+  history: 50000
+window:
+  dimensions:
+    columns: 90
+    lines: 25

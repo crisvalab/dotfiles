@@ -1,0 +1,24 @@
+/*
+!.gitignore
+
+# Except for the files and folders we want to track
+!alacritty
+!fish
+!starship.toml
+!htop
+!nvim
+!rofi
+!vifm
+!ranger
+!qtile
+!spectrwm
+!openbox
+!tint2
+!xmobar
+!dwm
+!dwmblocks
+!xmonad
+!xob
+!bat
+!lsd
+!picom

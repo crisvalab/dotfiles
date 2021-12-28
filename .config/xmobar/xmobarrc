@@ -1,0 +1,37 @@
+Config { 
+    font = "xft:Ubuntu Mono Nerd Font:weight=bold:pixelsize=30:antialias=true:hinting=true",
+    -- additionalFonts = [ "xft:Mononoki:pixelsize=25:antialias=true:hinting=true", "xft:Font Awesome 5 Free Solid:pixelsize=20", "xft:Font Awesome 5 Brands:pixelsize=15" ],
+    bgColor = "#292d3e",
+    fgColor = "#f07178",
+       -- Position TopSize and BottomSize take 3 arguments:
+       --   an alignment parameter (L/R/C) for Left, Right or Center.
+       --   an integer for the percentage width, so 100 would be 100%.
+       --   an integer for the minimum pixel height for xmobar, so 24 would force a height of at least 24 pixels.
+       --   NOTE: The height should be the same as the trayer (system tray) height.
+       -- position       = TopSize L 100 24,
+       lowerOnStart = True,
+       hideOnStart  = False,
+       allDesktops  = True,
+       persistent   = True,
+       iconRoot     = ".xmonad/xpm/",  -- default: "."
+       commands = [
+            -- Run Com "echo" [""] "penguin" 3600,
+            -- Run Com ".local/bin/kernel" [] "kernel" 36000,
+            Run Memory ["-t", " (<usedratio>%)"] 20,
+            Run Com "echo" [" "] "bell" 3600,
+            Run Com ".local/bin/pacupdate" [] "pacupdate" 36000,
+            Run Date "  %d/%m/%Y - %H:%M " "date" 600,
+            Run Com ".config/xmobar/trayer-padding-icon.sh" [] "trayerpad" 20,
+            Run Com ".local/bin/battery" [] "battery" 3,
+            -- Run Com ".local/bin/brightness" [] "brightness" 10,
+            Run UnsafeStdinReader
+                    ],
+       -- sepChar = "%",
+       alignSep = "}{",
+       template = " <fc=#FFFFFF>  </fc> <fc=#666666>|</fc> %UnsafeStdinReader% }{ <fc=#e1acff>%bell%  <action=`alacritty -e sudo pacman -Syu`>%pacupdate%</action></fc> <fc=#666666>|</fc> <fc=#FC9867><action=`alacritty -e htop`>%memory%</action></fc> <fc=#666666>|</fc> <fc=#c3e88d>%battery%</fc><fc=#666666>|</fc> <fc=#8BE9FD>%date%</fc><fc=#666666>|</fc>%trayerpad%",
+}
+
+-- <fc=#FF6188>%penguin%  %kernel%</fc>  
+-- <fc=#A9DC76><action=`alacritty -e htop`>%cpu%</action></fc>
+-- <fc=#FFD866>%disku%</fc>
+-- <fc=#FFB86C>%brightness%</fc>

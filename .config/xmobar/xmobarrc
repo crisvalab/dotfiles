@@ -28,7 +28,7 @@ Config {
                     ],
        -- sepChar = "%",
        alignSep = "}{",
-       template = " <fc=#FFFFFF>  </fc> <fc=#666666>|</fc> %UnsafeStdinReader% }{ <fc=#e1acff>%bell%  <action=`alacritty -e sudo pacman -Syu`>%pacupdate%</action></fc> <fc=#666666>|</fc> <fc=#FC9867><action=`alacritty -e htop`>%memory%</action></fc> <fc=#666666>|</fc> <fc=#c3e88d>%battery%</fc><fc=#666666>|</fc> <fc=#8BE9FD>%date%</fc><fc=#666666>|</fc>%trayerpad%",
+       template = " <fc=#FFFFFF>  </fc> <fc=#666666>|</fc> %UnsafeStdinReader% }{ <fc=#e1acff>%bell%  <action=`alacritty -e sudo pacman -Syu`>%pacupdate%</action></fc> <fc=#666666>|</fc> <fc=#FC9867><action=`alacritty -e htop`>%memory%</action></fc> <fc=#666666>|</fc> <fc=#c3e88d>%battery%</fc><fc=#666666>|</fc> <fc=#8BE9FD>%date%</fc><fc=#666666>|</fc>%trayerpad%"
 }
 
 -- <fc=#FF6188>%penguin%  %kernel%</fc>  
